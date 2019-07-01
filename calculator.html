@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calculator</title>
+		<link rel="stylesheet" href="style.css"></link>
+	</head>
+
+	<body>
+		<div class="container">
+
+			<input id="input" align="right" placeholder="0"></input>
+
+			<table>
+				<tr>
+					<td><button onclick="addNum(this.id)" id="7">7</button></td>
+					<td><button onclick="addNum(this.id)" id="8">8</button></td>
+					<td><button onclick="addNum(this.id)" id="9">9</button></td>
+					<td><button onclick="addNum(this.id)" id="/" class="operationBtn">÷</button></td>
+				</tr>
+				<tr>
+					<td><button onclick="addNum(this.id)" id="4">4</button></td>
+					<td><button onclick="addNum(this.id)" id="5">5</button></td>
+					<td><button onclick="addNum(this.id)" id="6">6</button></td>
+					<td><button onclick="addNum(this.id)" id="*" class="operationBtn">×</button></td>
+				</tr>
+				<tr>
+					<td><button onclick="addNum(this.id)" id="1">1</button></td>
+					<td><button onclick="addNum(this.id)" id="2">2</button></td>
+					<td><button onclick="addNum(this.id)" id="3">3</button></td>
+					<td><button onclick="addNum(this.id)" id="-" class="operationBtn">-</button></td>
+				</tr>
+				<tr>
+					<td><button onclick="addNum(this.id)" id="0">0</button></td>
+					<td><button onclick="clr()" id="Clear">CE</button></td>
+					<td><button onclick="calculate()" id="=" class="equalsBtn">=</button></td>
+					<td><button onclick="addNum(this.id)" id="+" class="operationBtn">+</button></td>
+				</tr>
+			</table>
+
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
